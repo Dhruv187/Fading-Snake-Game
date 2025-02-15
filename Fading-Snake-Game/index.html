@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="./Assets/Snake game logo with blue and black colors.png"
+    />
+    <script src="./app.js"></script>
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <audio src="./Assets/eat.mp3" class="eat" preload="auto"></audio>
+    <audio src="./Assets/hit.mp3" class="hit" preload="auto"></audio>
+    <audio
+      src="./Assets/Game Start.mp3"
+      class="startsound"
+      preload="auto"
+    ></audio>
+    <div class="container">
+      <h1 class="title">
+        Fading Snake<img class="sankelogo" src="./Assets/snake.png" />
+      </h1>
+      <header>
+        <div class="contrast">100%</div>
+        <div class="score">Score: 0</div>
+      </header>
+      <div class="grid"></div>
+      <button class="startbutton">SPACE</button>
+      <button id="togglebutton">H</button>
+      <footer class="foot">
+        Press any key or Space to start
+        <div>Press to H to start hard mode</div>
+      </footer>
+    </div>
+  </body>
+</html>
