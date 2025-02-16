@@ -149,7 +149,7 @@ Adds a new apple randomly on the grid.
 
 ## 📸 Screenshots
 
-<img src="./Assets/game pc.png" alt="Alt text" width="600" height="300">
+<img src="./Assets/game pc.png" alt="Alt text" width="500" height="300">
 <img src="./Assets/game mobile.jpg" alt="Alt text" width="200" height="300">
 
 ## 🏗️ Installation
