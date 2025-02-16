@@ -1,4 +1,4 @@
-# Fading Snake Game
+# 🐍 Fading Snake Game
 
 A unique twist on the classic Snake game, where the snake gradually fades away over time! Can you keep it alive and achieve the highest score before it disappears?
 
@@ -38,6 +38,104 @@ Enable swipe gestures for mobile control.
 
 Switches between Easy and Hard mode dynamically.
 
+## 🎮 How It Works
+
+The game runs in an animation loop controlled by **requestAnimationFrame**, ensuring smooth movements. Below is a breakdown of the key functions that drive the game logic.
+
+---
+
+## 🛠️ Key Functions Explained
+
+### 1️⃣ `main(timestamp)`
+
+This is the **game loop** function that keeps updating the game state.
+
+- It calculates the time elapsed since the last frame.
+- Determines if it's time to move the snake forward.
+- Calls `stepAndTransition(percentageOfStep)` to animate the snake's movement.
+
+**🔧 Visual Representation:**
+
+```plaintext
+[ Frame 1 ] -> [ Frame 2 ] -> [ Frame 3 ] -> ...
+    🟩        🟩🟩        🟩🟩🟩  (Snake Grows & Moves)
+```
+
+---
+
+### 2️⃣ `stepAndTransition(percentageOfStep)`
+
+Handles **both** stepping forward and transitioning between frames.
+
+- Determines how far the snake has progressed in the current step.
+- Calls `transition(percentageOfStep)` to apply fading and movement effects.
+
+**🎥 Visual:**
+
+```plaintext
+(50% step) -> 🟩🟩🟩  (fading starts)
+(100% step) -> 🟩🟩  (previous part fades out)
+```
+
+---
+
+### 3️⃣ `transition(percentageOfStep)`
+
+Applies **smoothing effects** to movement and opacity changes.
+
+- Uses `percentageOfStep` to determine the snake's fade level.
+- Creates smooth animations instead of abrupt movements.
+
+**🎨 Visual Effect:**
+
+```plaintext
+█ █ █ → █ ░ █ → █ ░ ░ (Fading Effect)
+```
+
+---
+
+### 4️⃣ `getNextPosition()`
+
+Calculates the **next position** of the snake based on its current direction.
+
+- Prevents moving backward to avoid collisions.
+- Ensures the snake follows a logical path.
+
+**📍 Example Path Calculation:**
+
+```plaintext
+⬆️  Move Up  → New Position (x, y - 1)
+➡️  Move Right → New Position (x + 1, y)
+⬇️  Move Down  → New Position (x, y + 1)
+⬅️  Move Left → New Position (x - 1, y)
+```
+
+---
+
+### 5️⃣ `addNewApple()`
+
+Adds a new apple randomly on the grid.
+
+- Ensures it does not appear inside the snake's body.
+- Increases the snake's length upon consumption.
+
+**🍏 Example Grid with Apple Placement:**
+
+```plaintext
+.  .  .  🍏  .  .
+.  🟩  🟩  🟩  .  .
+.  .  .  .  .  .
+```
+
+---
+
+## 🚀 Features
+
+✅ **Smooth fading animation** for the snake.
+✅ **Dynamic apple placement** to keep gameplay interesting.
+✅ **Frame-by-frame transitions** for fluid movement.
+✅ **Optimized for performance** with requestAnimationFrame.
+
 ## 🕹️ Controls
 
 | Action           | Key / Gesture             |
@@ -51,7 +149,8 @@ Switches between Easy and Hard mode dynamically.
 
 ## 📸 Screenshots
 
-_Add some screenshots here to showcase the game!_
+<img src="./Assets/game pc.png" alt="Alt text" width="200" height="100">
+<img src="./Assets/game mobile.jpg" alt="Alt text" width="100" height="200">
 
 ## 🏗️ Installation
 
@@ -65,3 +164,5 @@ _Add some screenshots here to showcase the game!_
 ## 🏆 Contribute
 
 Feel free to fork this project, submit pull requests, or suggest improvements!
+
+📌 **Happy Coding! 🎉**
