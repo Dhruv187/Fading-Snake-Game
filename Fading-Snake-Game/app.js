@@ -533,6 +533,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     throw Error("tiles are not connected");
   }
 
+  //! Function for generation of new apple
   function addNewApple() {
     let newPosition;
     do {
