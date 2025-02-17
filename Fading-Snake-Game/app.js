@@ -455,6 +455,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     if (tailDi == "down" || tailDi == "up") tail.style.height = tailValue;
   }
 
+  //! Function used to find position of the snake
   function getNextPosition() {
     const headPosition = snakePositions[snakePositions.length - 1];
     const snakeDirection = inputs.shift() || headDirection();
