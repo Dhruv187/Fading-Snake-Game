@@ -440,6 +440,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
       });
   }
 
+  //! Function used for transition of snake
   function transition(percentageOfStep) {
     const head = tiles[snakePositions[snakePositions.length - 1]];
     const headDi = headDirection();
