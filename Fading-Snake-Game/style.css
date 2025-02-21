@@ -4,11 +4,11 @@ body {
   size: 17px;
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #85caff;
+  background-color: #85ff85;
   background: linear-gradient(
     162deg,
-    rgb(133, 243, 255) 0%,
-    rgb(84, 136, 227) 100%
+    rgba(133, 255, 133, 1) 0%,
+    rgba(84, 227, 95, 1) 100%
   );
 }
 
@@ -68,7 +68,7 @@ footer {
 @media (max-width: 1024px) {
   .startbutton {
     display: block;
-    background-color: #85caff;
+    background-color: #85ff85;
     margin-top: 20px;
     width: 70px;
     font-weight: 600;
@@ -79,12 +79,12 @@ footer {
   }
   .startbutton:active {
     background-color: black;
-    color: #85caff;
-    border: 2px solid #85caff;
+    color: #85ff85;
+    border: 2px solid #85ff85;
   }
   #togglebutton {
     display: block;
-    background-color: #85caff;
+    background-color: #85ff85;
     margin-top: 10px;
     width: 70px;
     font-weight: 600;
@@ -95,8 +95,8 @@ footer {
   }
   #togglebutton:active {
     background-color: black;
-    color: #85caff;
-    border: 2px solid #85caff;
+    color: #85ff85;
+    border: 2px solid #85ff85;
   }
 }
 @media (max-width: 800px) {
@@ -106,11 +106,11 @@ footer {
     size: 17px;
     color: black;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #85caff;
+    background-color: #85ff85;
     background: linear-gradient(
       162deg,
-      rgb(133, 243, 255) 0%,
-      rgb(84, 136, 227) 100%
+      rgba(133, 255, 133, 1) 0%,
+      rgba(84, 227, 95, 1) 100%
     );
   }
   .title {
@@ -156,7 +156,7 @@ footer {
   }
   .startbutton {
     display: block;
-    background-color: #85caff;
+    background-color: #85ff85;
     margin-top: 20px;
     width: 70px;
     font-weight: 600;
@@ -167,12 +167,12 @@ footer {
   }
   .startbutton:active {
     background-color: black;
-    color: #85caff;
-    border: 2px solid #85caff;
+    color: #85ff85;
+    border: 2px solid #85ff85;
   }
   #togglebutton {
     display: block;
-    background-color: #85caff;
+    background-color: #85ff85;
     margin-top: 10px;
     width: 70px;
     font-weight: 600;
@@ -183,7 +183,7 @@ footer {
   }
   #togglebutton:active {
     background-color: black;
-    color: #85caff;
-    border: 2px solid #85caff;
+    color: #85ff85;
+    border: 2px solid #85ff85;
   }
 }
